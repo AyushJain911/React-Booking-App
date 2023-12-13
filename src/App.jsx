@@ -6,8 +6,8 @@ import List from "./pages/list/List";
 function App() {
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
-    { path: "/", element: <Hotel /> },
-    { path: "/", element: <List /> },
+    { path: "/hotels", element: <List /> },
+    { path: "/hotels/:id", element: <Hotel /> },
   ]);
 
   return (
